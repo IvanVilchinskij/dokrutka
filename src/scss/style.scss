@@ -9,3 +9,62 @@
         font-style: #{$style};
     }
 }
+
+$first-color: #505050;
+$second-color: #EB856B;
+$third-color: #615F5F;
+
+/* Fonts */
+
+@import 'fonts';
+
+/*  Default params */
+
+@import 'default';
+
+* {
+    font-family: 'Gilroy', Arial, Helvetica, sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 150px;
+    margin: 0 auto;
+    @media (max-width: 1199px) {
+        padding: 0 75px;
+    }
+    @media (max-width: 767px) {
+        padding: 0 30px;
+    }
+}
+
+.fixed-body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+}
+
+/* Blocks */
+
+@import 'blocks/main';
+@import 'blocks/btn';
+@import 'blocks/divider';
+@import 'blocks/titles';
+@import 'blocks/about';
+@import 'blocks/reasons';
+@import 'blocks/results';
+@import 'blocks/club';
+@import 'blocks/inside';
+@import 'blocks/mentors';
+@import 'blocks/choose';
+@import 'blocks/prices';
+@import 'blocks/contact';
+@import 'blocks/footer';
+@import 'blocks/mentor-modals';
+@import 'blocks/slider';
+@import 'blocks/modals';

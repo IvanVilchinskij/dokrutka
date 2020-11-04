@@ -1,0 +1,45 @@
+.divider-vr {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    background: rgba(255, 255, 255, 0.08);
+    z-index: 1;
+
+    &--1{
+        left: 217 / 1440 *100%;
+        transform: translateX(-50%);
+    }
+    &--2{
+        left: 468 / 1440 *100%;
+        transform: translateX(-50%);
+    }
+    &--3{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &--4{
+        right: 468 / 1440 *100%;
+        transform: translateX(-50%);
+    }
+    &--5{
+        right: 217 / 1440 *100%;
+        transform: translateX(-50%);
+    }
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.divider-hr {
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    bottom: 246px;
+    background: rgba(255, 255, 255, 0.08);
+    z-index: 1;
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
